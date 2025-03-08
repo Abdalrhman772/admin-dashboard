@@ -1,0 +1,55 @@
+<div class="shadow-sm bg-white rounded-lg p-5">
+  <mat-table [dataSource]="dataSource" matSort class="custom-table">
+    @for (col of columns; track col.field) {
+    <ng-container [matColumnDef]="col.field">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        {{ col.header }}
+      </mat-header-cell>
+
+      <mat-cell *matCellDef="let row">
+        <ng-container [ngSwitch]="col.type">
+          <div *ngSwitchCase="'image'" class="table-image-container">
+            <img
+              [src]="row[col.field]"
+              [alt]="col.header"
+              class="table-image"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Status Badge -->
+          <span
+            *ngSwitchCase="'badge'"
+            class="status-badge"
+            [ngClass]="row[col.field] | lowercase"
+            [attr.aria-label]="'Status: ' + row[col.field]"
+          >
+            {{ row[col.field] }}
+          </span>
+
+          <span *ngSwitchDefault>{{ row[col.field] }}</span>
+        </ng-container>
+      </mat-cell>
+    </ng-container>
+    }
+
+    <mat-header-row
+      *matHeaderRowDef="displayedColumns; sticky: true"
+    ></mat-header-row>
+    <mat-row
+      *matRowDef="let row; columns: displayedColumns"
+      (click)="navigateToDetails(row.id)"
+      class="cursor-pointer hover:bg-gray-100"
+    ></mat-row>
+  </mat-table>
+
+  <!-- Pagination -->
+  <div class="pagination-container">
+    <mat-paginator
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 20]"
+      showFirstLastButtons
+      aria-label="Select page of items"
+    ></mat-paginator>
+  </div>
+</div>

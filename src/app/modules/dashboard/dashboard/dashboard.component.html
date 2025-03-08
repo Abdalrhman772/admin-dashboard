@@ -1,0 +1,53 @@
+<div class="p-4 sm:p-6 md:p-8 flex flex-col gap-6">
+  <!-- Analytics Section -->
+  <section>
+    <h2 class="text-xl font-semibold mb-1">Analytics</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <app-analytics-card
+        *ngFor="let card of analyticsCards"
+        [icon]="card.icon"
+        [title]="card.title"
+        [value]="card.value"
+        [percentage]="card.percentage"
+        [isPositive]="card.isPositive"
+        [attr.aria-label]="card.title + ' analytics'"
+      ></app-analytics-card>
+    </div>
+  </section>
+
+  <!-- Charts Section -->
+  <section class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
+    <div class="md:col-span-9 bg-white shadow-sm rounded-xl p-4">
+      <app-chart
+        [chartOptions]="lineChartOptions"
+        aria-label="Line chart visualization"
+      ></app-chart>
+    </div>
+
+    <div class="md:col-span-3 bg-white shadow-sm rounded-xl p-4">
+      <app-chart
+        [chartOptions]="barChartOptions"
+        aria-label="Bar chart visualization"
+      ></app-chart>
+    </div>
+  </section>
+
+  <!-- Orders Section -->
+  <section>
+    <div class="flex items-center justify-between">
+      <h2 class="text-xl font-semibold mb-1">Recent Orders</h2>
+      <a
+        routerLink="/orders"
+        class="flex items-center text-gray-400 hover:text-gray-600"
+      >
+        <span>Go to Orders Page</span>
+        <i class="material-icons ml-1">arrow_forward</i>
+      </a>
+    </div>
+    <app-table
+      [columns]="columns"
+      [data]="orders"
+      aria-label="Recent orders table"
+    ></app-table>
+  </section>
+</div>

@@ -1,0 +1,111 @@
+{
+  "analyticsCards": [
+    {
+      "icon": "assets/images/Icon_Total_Revenue.svg",
+      "title": "Total Revenue",
+      "value": "$52.6k",
+      "percentage": "+3.4%",
+      "isPositive": true
+    },
+    {
+      "icon": "assets/images/Icon_Today Revenue.svg",
+      "title": "Today Revenue",
+      "value": "$1024",
+      "percentage": "-5.5%",
+      "isPositive": false
+    },
+    {
+      "icon": "assets/images/Icon_Sales.svg",
+      "title": "Items Sold",
+      "value": "22",
+      "percentage": "+1.2%",
+      "isPositive": true
+    },
+    {
+      "icon": "assets/images/Icon_Users.svg",
+      "title": "Users Active",
+      "value": "11",
+      "percentage": "+0.8%",
+      "isPositive": true
+    }
+  ],
+
+  "lineChart": {
+    "series": [
+      {
+        "name": "Sales",
+        "data": [20000, 50000, 45000, 55000, 60000, 45000, 70000]
+      }
+    ],
+    "categories": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+
+  "barChart": {
+    "series": [
+      {
+        "name": "Visits",
+        "data": [200, 400, 300, 150, 350, 50, 30]
+      }
+    ],
+    "categories": ["M", "T", "W", "T", "F", "S", "S"]
+  },
+
+  "orders": [
+    {
+      "id": "1",
+      "image": "https://www.clove.co.uk/cdn/shop/products/iphone-14-pro-gold-side_1200x.jpg?v=1665056845",
+      "name": "iPhone 14 Pro",
+      "qty": 2,
+      "date": "2024-03-08",
+      "amount": "$120",
+      "status": "Pending",
+      "description": "iPhone 14 Pro features a 6.1-inch Super Retina XDR OLED display, A16 Bionic chip, 48MP main camera, Dynamic Island, ProMotion technology, and all-day battery life. Available in various colors with storage options up to 1TB."
+    },
+    {
+      "id": "2",
+      "image": "https://smartkoshk.com/cdn/shop/files/Samsung-Galaxy-S23-FE-Dual-Purple.png?v=1707686440&width=1946",
+      "name": "Samsung Galaxy S23",
+      "qty": 1,
+      "date": "2024-03-07",
+      "amount": "$80",
+      "status": "Approved",
+      "description": "Samsung Galaxy S23 features a 6.6-inch Dynamic AMOLED display, Snapdragon 8 Gen 2 processor, triple camera system with 50MP main sensor, 5G connectivity, and long-lasting battery with fast charging capabilities. Available in multiple sophisticated colors."
+    },
+    {
+      "id": "3",
+      "image": "https://m.media-amazon.com/images/I/816gMjg908L._AC_UF894,1000_QL80_.jpg",
+      "name": "Google Pixel 7",
+      "qty": 3,
+      "date": "2024-03-06",
+      "amount": "$200",
+      "status": "In-Process",
+      "description": "Google Pixel 7 features a 6.3-inch OLED display, Google Tensor G2 chip, advanced dual camera system with 50MP main sensor, enhanced AI capabilities, clean Android experience, and all-day battery life. Known for its exceptional photography capabilities."
+    },
+    {
+      "id": "4",
+      "image": "https://m.media-amazon.com/images/I/71jvbxyQ2TL.jpg",
+      "name": "OnePlus 11",
+      "qty": 5,
+      "date": "2024-03-05",
+      "amount": "$300",
+      "status": "Pending",
+      "description": "OnePlus 11 features a 6.7-inch QHD+ AMOLED display with 120Hz refresh rate, Snapdragon 8 Gen 2 processor, Hasselblad triple camera system, 100W fast charging, and OxygenOS for smooth performance. Delivers flagship experience with premium build quality."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@devSolutions.com",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Regular User",
+      "email": "user@devSolutions.com",
+      "password": "user",
+      "role": "user"
+    }
+  ]
+}

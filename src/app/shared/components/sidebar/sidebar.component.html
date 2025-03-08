@@ -1,0 +1,31 @@
+
+<mat-sidenav-container class="">
+  <mat-sidenav
+    mode="side"
+    opened
+    class="py-4 px-8 bg-white"
+    [disableClose]="true"
+    [fixedInViewport]="true"
+    [fixedTopGap]="0"
+  >
+    <div class="p-4 flex items-center">
+      <img src="assets/images/Logo.svg" alt="Logo" class="mb-4" />
+    </div>
+
+    <a routerLink="/dashboard" routerLinkActive="active">
+      <mat-icon>home</mat-icon> Dashboard
+    </a>
+
+    @if (isAdmin()) {
+    <a routerLink="/reports" routerLinkActive="active">
+      <mat-icon>description</mat-icon> Reports
+    </a>
+    <a routerLink="/orders" routerLinkActive="active">
+      <mat-icon>shopping_cart</mat-icon> Orders
+    </a>
+    <a routerLink="/settings" routerLinkActive="active">
+      <mat-icon>settings</mat-icon> Settings
+    </a>
+    }
+  </mat-sidenav>
+</mat-sidenav-container>

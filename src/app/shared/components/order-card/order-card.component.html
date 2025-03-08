@@ -1,0 +1,33 @@
+<div class="order-details m-5">
+  <div class="order-header">
+    <h2>Order #{{ order.id }}</h2>
+    <span class="status-badge" [ngClass]="order.status.toLowerCase()">{{
+      order.status
+    }}</span>
+  </div>
+
+  <div class="order-content">
+    <div class="product-info">
+      <img [src]="order.image" [alt]="order.name" />
+      <div class="details">
+        <h3>{{ order.name }}</h3>
+        <p class="description">{{ order.description }}</p>
+      </div>
+    </div>
+
+    <div class="order-info">
+      <div class="info-item">
+        <span class="label">Order Date:</span>
+        <span class="value">{{ order.date }}</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Quantity:</span>
+        <span class="value">{{ order.qty }}</span>
+      </div>
+      <div class="info-item">
+        <span class="label">Total Amount:</span>
+        <span class="value">{{ order.amount }}</span>
+      </div>
+    </div>
+  </div>
+</div>

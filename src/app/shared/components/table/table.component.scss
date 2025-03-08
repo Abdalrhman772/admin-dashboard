@@ -1,0 +1,69 @@
+// Custom table styles
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+mat-header-cell {
+  font-weight: 600;
+  background-color: #f7f8fc;
+  padding: 8px;
+  font-size: 14px;
+  text-transform: capitalize;
+  border: none;
+  color: #a6a9aa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+mat-cell {
+  padding: 8px;
+  font-size: 14px;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+mat-header-row {
+  border-bottom: none;
+  background-color: #f7f8fc;
+}
+
+.table-image-container {
+  display: flex;
+  align-items: center;
+}
+
+.table-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 12px;
+}
+
+.status-badge {
+  &.pending {
+    background-color: #e6f0ff;
+    color: #0066ff;
+  }
+
+  &.approved {
+    background-color: #e6f7ed;
+    color: #1f9d55;
+  }
+
+  &.in-process {
+    background-color: #fff7e6;
+    color: #e67e22;
+  }
+}
