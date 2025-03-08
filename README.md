@@ -1,6 +1,6 @@
 # Manager Pro Admin Dashboard
 
-A modern, feature-rich admin dashboard built with Angular 17, featuring role-based authentication, modular architecture, and responsive design.
+A modern, feature-rich admin dashboard built with Angular 19, featuring role-based authentication, modular architecture, and responsive design.
 
 ## Features
 
@@ -9,19 +9,12 @@ A modern, feature-rich admin dashboard built with Angular 17, featuring role-bas
 - 📱 Responsive design
 - 🎨 Modern UI with Angular Material and Tailwind CSS
 - 📦 Modular architecture
-- 🔄 Real-time data updates
-
-## Prerequisites
-
-- Node.js (v18 or higher)
-- npm (v9 or higher)
-- Angular CLI (v17 or higher)
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/manager-pro.git
+git clone https://github.com/Abdalrhman772/admin-dashboard.git
 ```
 
 ```bash
@@ -86,7 +79,7 @@ The system includes two predefined user roles:
 
 ## Technology Stack
 
-- **Frontend Framework**: Angular 17
+- **Frontend Framework**: Angular 19
 - **UI Libraries**: 
   - Angular Material
   - Tailwind CSS
@@ -135,15 +128,3 @@ src/
 ├── assets/
 └── styles/
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## License
-
-This project is licensed under the MIT License
